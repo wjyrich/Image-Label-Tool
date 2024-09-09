@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Accessibility;Qt;Utility;
+Exec=LabelImg
+Name=LabelImg
+Name[zh_CN]=LabelImg
+Icon=LabelImg
+StartupNotify=false
+Terminal=false
+Type=Application
+GenericName=LabelImg
+Version=1.0

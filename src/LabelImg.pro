@@ -38,10 +38,13 @@ HEADERS += \
     mylable.h \
     warning_widget.h
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+target.path = $$PREFIX/bin
+desktop.files = images/LabelImg.desktop
+desktop.path = $$PREFIX/share/applications/
+icons.path = $$PREFIX/share/icons/hicolor/apps/
+icons.files = images/LabelImg.png
+
+INSTALLS += target desktop icons
 
 RC_FILE = App.rc
 
